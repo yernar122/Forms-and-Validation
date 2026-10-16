@@ -1,0 +1,126 @@
+body {
+    background: #f7f9fc;
+    color:#17253b;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 44px 18px 80px;
+}
+
+.page-heading {
+    margin-bottom: 22px;
+}
+
+.form-panel {
+    background: #fff;
+    border:1px solid #e5eaf1;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 5px 20px rgba(28,44,70,.035);
+}
+.task-links {
+    display: flex;
+    flex-wrap:wrap;
+    gap:12px;
+    font-size: .9rem;
+}
+
+.task-links a[aria-current=page] {
+    color:#17253b;
+    font-weight:700;
+    text-decoration: underline;
+}
+
+.subtitle {
+    margin-bottom: 0;
+}
+
+.form-panel h2 {
+    font-size:1.3rem;
+    margin:0 0 20px;
+}
+
+.note {
+    font-size:.85rem;
+    color:#64748b;
+    margin-top:16px
+}
+
+.plain-form label {
+    display:block;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.plain-form input,.plain-form textarea {
+    box-sizing:border-box;
+    display:block; width:100%;
+    padding:9px 10px;
+    border:1px solid #9ba7b5;
+    border-radius:5px;
+    font:inherit;
+    margin-bottom:16px;
+}
+
+.plain-form button {
+    padding:10px 20px;
+    background:#244c93;
+    color:white;
+    border:0;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.form-message {
+    margin-top:14px;
+    font-size:.92rem;
+    color:#137447;
+    min-height: 1.25rem;
+}
+
+.form-check {
+    margin-bottom: 5px;
+}
+
+.form-control:focus,.form-select:focus {
+    border-color: #7a9ed9;
+    box-shadow: 0 0 0 .2rem rgba(36,76,147,.12);
+}
+
+@media(max-width: 600px) {
+    .page {
+        padding-top:24px;
+    }
+    .form-panel {
+        padding:20px 16px;
+    }
+}
+
+.task-block {
+    margin-top: 38px;
+    scroll-margin-top: 24px;
+}
+
+.task-block .page-heading h2 {
+    margin: 0 0 7px;
+}
+.radio-invalid {
+    border:1px solid #dc3545;
+    padding:10px;
+    border-radius:6px;
+}
+
+.radio-invalid::after {
+    content:'Please select a gender.';
+    display:block;
+    color:#dc3545;
+    font-size:.875rem;
+    margin-top:4px;}
+
+@media (max-width:600px){
+    .task-block{
+        margin-top:28px;
+    }
+}
